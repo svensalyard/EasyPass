@@ -40,6 +40,17 @@ function generatePassword() {
     if (!getNumber && !getSymbol && !getLowerCase && !getUpperCase) {
       window.alert("Please select at least one option. Please try again.");
     };
+		
+    // Takes chosen chracters and makes a random selection based on length
+    // then generates the password
+
+
+    for (let i = 0; i < length; i++) {
+			randPassword += chars[Math.floor(Math.random() * chars.length)];
+			}; 
+			//ouputs the password for the writePassword function to take and display in the text area
+			return randPassword
+	
 	}
 
   // Warns user that the password length is incorrect, they need to try again.
